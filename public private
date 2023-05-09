@@ -1,0 +1,31 @@
+// example of class
+
+#include<iostream>
+using namespace std;
+
+class n{
+  int i;
+  
+  void set(int num);
+  int get();
+  };
+
+/*void n::set(int num)
+{
+   i=num;
+}
+
+int n::get()
+{
+  return i;
+}*/
+
+int main()
+{
+  n ob1,ob2;
+  ob1.set(20);
+  ob2.set(89);
+  cout<<ob1.get()<<"\n";
+  cout<<ob2.get();
+  return 0;
+}
