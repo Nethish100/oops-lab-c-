@@ -1,0 +1,8 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int i;
+  cout<<"enter the number""\n";
+  cin>>i;
+  cout<<i<<" square is "<<i*i;
+  ret
