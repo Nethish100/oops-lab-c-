@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+  cout<<"hi hello";
+  cout<<"43htoi3upyti23qghtj4hi3i";
+  return 0;
+  
+}
