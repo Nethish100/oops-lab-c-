@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+class res
+{
+  static int re;
+  public:
+  static int getr();
+  void free_re()
+  {
+    re=0;
+  }
+};
+
+int res::re;
+int res::getr()
+{
+  if(re)
+  return 0;
+  else{
+    re=1;
+    return 1;
+    
+  }
+}
+int main()
+{
+  res a,b;
+  if(res::getr())
+  cout<<"resourcs under use,object a is using \n";
+  if(!res::getr())
+  cout<<"resourcs under use,object b acces denied \n";
+  a.free_re();
+  if(res::getr())
+  cout<<"resource can now be used by object b \n";
+  return 0;
+}
